@@ -228,3 +228,9 @@ h1 {
 #everything4{
   visibility: hidden
 }
+
+.results-art {
+  padding-top: 60px;
+
+  margin-block-start: 70px;
+}
