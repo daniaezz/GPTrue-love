@@ -21,12 +21,24 @@ let text;
 
 function clicked(element){
 
-  index = $(element).attr('class')[1]
-  console.log(con_obj['s'+index][1]);
-  score = con_obj['s'+index][1];
-
+  // index = $(element).attr('class')[1]
+  // console.log(con_obj['s'+index][1]);
+  // score = con_obj['s'+index][1];
+  // if(element.firstChild.checked){
+  // element.style.backgroundColor = "white";
+  // element.style.color = "black";
+  // console.log('it works');
+  // }
+  
+  // }
+  // if(!element.firstChild.checked){
+  //   element.style.backgroundColor = "black";
+  //   element.style.color = "white";
+  //   console.log('else');
+  
 
   // text = con_obj['s'+index][0];
   // console.log(();
   // $(element).href = 'conRes.html';
 }
+
