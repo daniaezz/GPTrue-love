@@ -14,6 +14,9 @@
         01: THE CONFESSION ♥
       </div>
       <div class="grid">
+        <!-- <div class="toptext">
+        This is it! GPTheo’s gonna confess to GPTessa…
+      </div> -->
         <pre class="ascii">
   <!-- DO NOT UNDER ANY CIRCUMSTANCES TOUCH THIS PART OF THE CODE -->
      ?
@@ -34,6 +37,7 @@
       / ~~~~~~~~~~~~~~ \
       ------------------
         </pre>
+
         <div class="con-text" id='con-text'>
           <div class="pencil">
             <pre class='ppap'>
@@ -44,14 +48,23 @@
 
             </pre>
           </div>
-          <div class="radio-button">
-            <input id="radio-1" type="radio" name="language" value="java" class='radiob'>
-            <label for="radio-1" class="s0 hh"></label>
-            <input id="radio-2" type="radio" name="language" value="cpp"  class='radiob'>
-            <label for="radio-2" class="s0 hh"></label>
-            <input id="radio-3" type="radio" name="language" value="python" class='radiob'>
-            <label for="radio-3" class="s0 hh"></label>
-          </div>
+          <form id='form'  ... onsubmit='getScore();'>
+            <div class="radio-button">
+              <input id="radio-0" type="radio" onclick="clicked(this)" name="language" value="java" class='radiob'>
+              <label for="radio-0" class="s0 hh"></label>
+              <input id="radio-1" type="radio" onclick="clicked(this)" name="language" value="cpp"  class='radiob'>
+              <label for="radio-1" class="s1 hh"></label>
+              <input id="radio-2" type="radio" onclick="clicked(this)" name="language" value="python" class='radiob'>
+              <label for="radio-2" class="s2 hh"></label>
+              <input id="radio-3" type="radio" onclick="clicked(this)" name="language" value="python" class='radiob'>
+              <label for="radio-3" class="s3 hh"></label>
+              <input id="radio-4" type="radio" onclick="clicked(this)" name="language" value="python" class='radiob'>
+              <label for="radio-4" class="s4 hh"></label>
+            </div>
+
+          </form>
+
+
           <!-- <a href='conRes.html'><div class="s0 hh" onclick="clicked(this)"></div></a>
           <a href='conRes.html'><div class="s1 hh" onclick="clicked(this)"></div></a>
           <a href='conRes.html'><div class="s2 hh" onclick="clicked(this)"></div></a>
@@ -59,7 +72,14 @@
           <a href='conRes.html'><div class="s4 hh" onclick="clicked(this)"></div></a> -->
         </div>
       </div>
+      <a href="conRes.html">
+        <div class="button2">
+        ♥&nbsp&nbsp SUBMIT &nbsp&nbsp♥
+      </div>
+    </a>
 
     </div>
+
+
   </body>
 </html>

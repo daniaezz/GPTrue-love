@@ -89,6 +89,7 @@ a{
   align-items: center;
 }
 
+/* grid2{} */
 .con-text{
   display: grid;
   align-items: center;
@@ -134,15 +135,29 @@ input[type="radio"] {
 
 .radio-button input[type="radio"] {
   display: none;
-}      
+}
 
 .radio-button label {
   display: inline-block;
   padding: 4px 11px;
   cursor: pointer;
-}      
+}
 
 .radio-button input[type="radio"]:checked+label {
   background-color: white;
   color: black;
+}
+
+.button2{
+  display: grid;
+  justify-self: center;
+  width: 200px;
+  height: 50px;
+  color: black;
+  background-color: white;
+  align-items: center;
+  font-size: 40px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 100px; */
+  /* position: absolute; */
 }
