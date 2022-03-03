@@ -26,6 +26,10 @@ body{
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
+.small-ascii {
+  font-size: 12px;
+}
+
 pre{
   margin-top: 100px;
   /* margin: 0;
@@ -85,7 +89,7 @@ a{
 
 .grid{
   display: inline-grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
   align-items: center;
 }
 
@@ -94,7 +98,7 @@ a{
   display: grid;
   align-items: center;
   justify-self: center;
-  width: 740px;
+  width: 700px;
   height: 400px;
   border-color: white;
   /* border-width: 1px; */
@@ -165,21 +169,21 @@ input[type="radio"] {
 
 
 h1 {
-  text-align: left;
-  font-size: 60px;
+  font-size: 52px;
   line-height: 96%;
   margin-block-start: 70px;
   margin-block-end: 0px;
 }
 
 .header {
+  text-align: left;
   padding: 0px 40px 0px 40px;
 }
 
 .button-container {
   justify-content: right;
   display: flex;
-  width: 863px;
+  width: 820px;
   align-items: right;
   margin-left: auto;
 }
