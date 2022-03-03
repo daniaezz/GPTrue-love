@@ -3,7 +3,7 @@ body{
   padding: 0;
   background-color: black;
   color: white;
-  font-size: 24pt;
+  font-size: 25pt;
 }
 
 @font-face {
@@ -27,18 +27,20 @@ body{
 }
 
 pre{
-  margin-top: 40px;
+  margin-top: 100px;
   /* margin: 0;
-  padding: 0; */
-  font-size: 12px;
+  /* padding: 0;  */
+  padding: 0;
+  margin: 0;
+  font-size: 15pt;
+  /* width: ; */
 }
 
 .title{
-  padding: 20px 0 0 20px;
-  position: sticky;
-  text-align: left;
+  padding: 35px 0 0 35px;
+  position: absolute;
   top: 0;
-  font-size: 20pt;
+  font-size: 25pt;
 }
 
 a{
@@ -70,7 +72,7 @@ a{
   align-items: center;
   justify-self: center;
   line-height: 40px;
-  width: 80%;
+  width: 50%;
   /* margin: 0; */
 }
 
