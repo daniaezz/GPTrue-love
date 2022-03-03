@@ -18,6 +18,7 @@ let index;
 let score = 0;
 let text;
 let clickable = 0;
+
 function clicked(element){
   clickable =1;
   index = element.id[6]
