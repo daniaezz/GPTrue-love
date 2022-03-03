@@ -216,3 +216,7 @@ h1 {
 /* .c{
   position: inherit;
 } */
+
+#everything3{
+  visibility: hidden;
+}

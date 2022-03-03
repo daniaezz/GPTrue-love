@@ -33,7 +33,7 @@ function clicked(element){
 }
 
 document.getElementById('button2').addEventListener("click",()=>{
-  console.log('ww');
+  // console.log('ww');
   if (clickable == 1 ){
     $('#everything1').css('display', 'none');
     $('#everything2').css('visibility', 'visible');
@@ -42,3 +42,25 @@ document.getElementById('button2').addEventListener("click",()=>{
   }
 
 });
+
+document.getElementById('button3').addEventListener("click",()=>{
+  // console.log('ww');
+    $('#everything2').css('display', 'none');
+    $('#everything3').css('visibility', 'visible');
+    // $('.brogress').css('width', score+'%');
+    // $('.brogress').css('animation-name', 'brogress');
+
+
+});
+
+comp_obj = {"t0": ["You\u2019re like sunshine on a happy little vacation.", 13.0625], "t1": ["You\u2019re more fun than a triple-scoop ice cream cone.", 14.0], "t2": ["You have a good head on your shoulders singing right now.", 14.928571428571427], "t3": ["You\u2019ve got all the right time is impressive.", 16.428571428571427], "t4": ["If cartoon bluebirds were real, a bunch of them would be lucky to have you in their lives.", 12.666666666666666], "t5": ["When you make babies smile.", 13.0], "t6": ["If cartoon bluebirds were real, a bunch of them would be better if more people were like you!", 14.416666666666666], "t7": ["When you\u2019re not afraid to be yourself is what makes you so interesting.", 14.0], "t8": ["You\u2019ve got all the right time is impressive.", 16.428571428571427], "t9": ["Everything would be sitting on your shoulders.", 10.0], "t10": ["You\u2019re more fun than a unicorn, because you\u2019re real.", 13.333333333333332], "t11": ["When you\u2019re not afraid to be yourself is what makes you so interesting.", 14.0], "t12": ["You have the best in other people.", 14.375], "t13": ["How is it that you always get back up and keep going.", 10.0], "t14": ["Everyday is just BLAH when I need to hear when I need to hear it.", 8.0], "t15": ["You\u2019ve got all the right time is impressive.", 16.428571428571427], "t16": ["You have a great example to others.", 18.0], "t17": ["Everyone gets knocked down sometimes, but you always look great, even in sweatpants?", 13.222222222222221], "t18": ["Everything would be sitting on your shoulders.", 10.0], "t19": ["You\u2019re more helpful than you are on the outside.", 12.5], "t20": ["Any team would be sitting on your shoulders.", 10.0], "t21": ["If cartoon bluebirds were real, a bunch of them would be lucky to have you on it.", 12.666666666666666], "t22": ["You have impeccable grammar.", 17.5], "t23": ["Colors seem brighter when you\u2019re most incredible.", 17.0], "t24": ["You\u2019re even more beautiful on the inside than you are on the inside than you are on the inside than you realize.", 16.75], "t25": ["You have a great listener.", 18.0], "t26": ["Being around you is always a blast.", 10.0], "t27": ["And I like your style.", 10.0], "t28": ["When you make babies smile.", 13.0], "t29": ["You\u2019re more helpful than you are on the inside than you realize.", 15.0], "t30": [". . . . . You\u2019re irresistible when you tell them.", 10.0], "t31": ["Everyone gets knocked down sometimes, but you always look great, even in sweatpants?", 13.222222222222221], "t32": ["If cartoon bluebirds were real, a bunch of them would be lucky to have you in their lives.", 12.666666666666666], "t33": ["You have impeccable grammar.", 17.5]}
+
+let tt=0;
+
+for (let i =0; i<8; i++){
+  rand_con = Math.floor(Math.random()*20);
+  hehe = comp_obj['t'+rand_con][0];
+  console.log(hehe);
+  $('.t'+tt).append(hehe)
+  tt++;
+}
