@@ -186,3 +186,32 @@ h1 {
 .right-content {
   width: 720px;
 }
+
+.scoreBar{
+  width: 600px;
+  height: 50px;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  justify-self: center;
+}
+
+#everything2{
+  visibility: hidden;
+  position: absolute;
+}
+
+.brogress{
+  height: 100%;
+  background-color: white;
+  /* animation-name: brogress;
+  animation-duration: 1s;  */
+}
+
+/* @keyframes brogress {
+  0%   {width:0;}
+  100% {width:}
+} */
+/* .c{
+  position: inherit;
+} */
