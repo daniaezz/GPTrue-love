@@ -71,3 +71,31 @@ a{
   width: 50%;
   /* margin: 0; */
 }
+
+.con{
+  padding-left: 250px;
+  text-align: left;
+  /* color: red; */
+  /* left: 0;   */
+}
+
+.grid{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.con-text{
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  width: 600px;
+  height: 350px;
+  border-color: white;
+  /* border-width: 1px; */
+  /* border-radius: 100%; */
+  text-align: left;
+  padding: 10px;
+  border-style: solid;
+  overflow: scroll;
+}
