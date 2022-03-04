@@ -96,7 +96,17 @@ document.getElementById('button4').addEventListener("click",()=>{
 
 });
 
-poem_obj = poems = [```GPTessa, I love you.
+document.getElementById('button5').addEventListener("click",()=>{
+  // console.log('ww');
+    $('#everything4').css('display', 'none');
+    $('#everything5').css('visibility', 'visible');
+    // $('.brogress').css('width', score+'%');
+    // $('.brogress').css('animation-name', 'brogress');
+
+
+});
+
+poem_obj = [`GPTessa, I love you.
     You are such, and I such,
     That you and I should one.
 
@@ -104,7 +114,7 @@ We lay on our knees before the Violets,
 Sitting on the basilar of the broad valley
 Bloodied, and in a stalactite
 Pale, pale, and full of doubt.
-Could this be the tomb of my love?```, ```GPTessa, I love you.
+Could this be the tomb of my love?`, `GPTessa, I love you.
     But I fear your love will grow stronger,
     If only I could marry you,
     If you were as red as I thought you were.
@@ -112,27 +122,27 @@ Could this be the tomb of my love?```, ```GPTessa, I love you.
 The road splits along the dark blue skylight
 Over the sunken bridge
 Overspread with snow, and down I plunge
-Down at your side.```,
+Down at your side.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
     To tell the world I love thee, I must be infatuated,
      Even with lowered taxes, like lambs.
 
 Wistful hearts, love is deceiving;
 And in my state of affairs, as in your,
-Though I live according to you.```, ```GPTessa, I love you.
+Though I live according to you.`, `GPTessa, I love you.
     But I fear the day, as you, will come when we
     When we all die.
 
 You are the morning, I am the evening,
 You and me in bed, me and the stars
 Beyond me are made of glass.
-You are the morning still, light in a late blue.```, ```GPTessa, I love you.
+You are the morning still, light in a late blue.`, `GPTessa, I love you.
 I love you so, you are the seal of my love,
 That you may be my seal, you must be
-A seal which my love can take.```,
+A seal which my love can take.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 Your love and I,
 We lusted after each other like brothers,
 And we then became one,
@@ -143,83 +153,83 @@ This is our new house,
 This is our old house,
 This is where we all started,
 Where the stars and the clouds
-Wept and wailed and died.```, ```GPTessa, I love you.
+Wept and wailed and died.`, `GPTessa, I love you.
 
 
 Thy love, and I, and I love you,
 I will cut across the wall of pain
 To leave the dark as thy brow
 Pale, and thy black bareness
-To give full black to my love.```,
+To give full black to my love.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 And how is my fondue fared,
 That he is wont to visit when I is away?
 O! how I faint at the thought of you,
 When I am wont to your fondue to be cuddly nigh;
 For you are such an affectionate fellow,
-That when I think of you, I lov’st thee with a fondue of life.```, ```GPTessa, I love you.
+That when I think of you, I lov’st thee with a fondue of life.`, `GPTessa, I love you.
 I love you with all my heart,
 And though I may be sorely mistaken,
 I am ever your beauteous heir,
 I am ever your graces and your gifts.
     And ever so, you blessed plant,
-    Your virginity and your gift of it.```,
-        ```GPTessa, I love you.
+    Your virginity and your gift of it.`,
+        `GPTessa, I love you.
 I love you with all my heart,
-And I do hope you will agree.```, ```GPTessa, I love you.
+And I do hope you will agree.`, `GPTessa, I love you.
 I love you for that, too,
 But you must go, for I am bound,
 To go to hell.
 It is with this determination, and this determination that I am beguil’d,
 I must travel.
-And when I go, I pray you will follow.```, ```GPTessa, I love you.
+And when I go, I pray you will follow.`, `GPTessa, I love you.
 
 You knowed as I commanded, when I commanded
 You to leave.
 Ah knowed, from the very day I took this oath,
 You gave evidence as to my intent.
 You have sworn an oath of love, an oath which I have never been able to prove.
-I swear an oath of loyalty, an oath which I have sworn for none.```,
+I swear an oath of loyalty, an oath which I have sworn for none.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
     And you, too, I love you.
 
 Your love has in some way defined my life;
 Your love has in some way defined my existence
 If not my death; and it has shaped my thoughts,
 And made me my slave.
-It has shaped my thought; and it has shaped my feeling.```, ```GPTessa, I love you.
+It has shaped my thought; and it has shaped my feeling.`, `GPTessa, I love you.
 
 I love you also,
 And I do hope that in the end all you share,
 That this happiness which you bring about may be
-The best which this vast field of thought can afford.```, ```GPTessa, I love you.
+The best which this vast field of thought can afford.`, `GPTessa, I love you.
 -    But I fear your kind is your sweet,
     Where love is sweet and hate is venom.
 
 When I think of you,
 When I see the stars
 That make your blue
-Are painted of gold.```,
+Are painted of gold.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 You know my feeling, didn't you?
 You know who I am, aren't I the thing I am?
 You know who I is with my fall, if I could just know,
 That I was with your falling?
 You know who I am with my fall, if I could just know,
-That I was with your lying?```,
+That I was with your lying?`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
     Those veins which, flowing through me,
    Have bound my soul, make me change my state of rest.
 
 O! that I may boast that I have changed my state of rest,
 I do it with energy; but love, quick as light,
-With energy my dear, beats a stop to my boast.```,
+With energy my dear, beats a stop to my boast.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
     But, love, I know you cannot be mine.
 
 The road leads back into the road,
@@ -228,9 +238,9 @@ The red-gold constellations
 With reden rhododendrons dance
 In a passion I did not foresee;
 I did not design
-For the carvings that follow.```,
+For the carvings that follow.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 I love you all,
 But I can no more love thee,
 For I know thou holdest no sweet with which to graciously cry.
@@ -239,9 +249,9 @@ There,
 you have
 And you hold as I,
 Whilst I am still at your side,
-Your kisses still hold my blood.```,
+Your kisses still hold my blood.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
      Now you’ve got to go,
     If I can't go with you.
 
@@ -249,30 +259,30 @@ If you would like to ask permission to fly,
 Go to any land I trust,
 And have an enquiry into my state,
 You’ve to go through any land-wall
-That I have put up for sale.```,
+That I have put up for sale.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 —Whoa, you don't have to say that, do you?
 ’Gently, ’ae away the tears,
 And I will put an end to this sound
-That you make when you are sung.```,
+That you make when you are sung.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 I love you so, that now I can say
 He’s come to take me.
     And now I’ll be free,
-    ’Am I not free without you?```,
+    ’Am I not free without you?`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 I love you—I love you’s red and white,
 You and I and all the world knows you.
 You and I, the worlds apart.
 You and I, the worlds apart.
 We’ll all be white and blue dolphins
 In one of our worlds, together
-We’ll all be white and blue swine.```,
+We’ll all be white and blue swine.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 I love you too,
       I would, to marry you, if this horrid world
      Could have me banished.
@@ -280,9 +290,9 @@ I love you too,
 To me, fair friend, you never escape
 From this vicious circle of wickedness;
 I am bound to your side, and I cannot be
-Unwavering in my opposition.```,
+Unwavering in my opposition.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 At any rate, now I know your love is waxing wax,
 And that you and I,
 That you and I are one.
@@ -290,24 +300,24 @@ I hope your sweet face will be a familiar backdrop,
 When we, too, in the street become our object;
 When our object is to look bare on us,
 And furtively throughout the city
-Your sweet face will bear.```,
+Your sweet face will bear.`,
 
-        ```GPTessa, I love you. You are such a dear thing that I could not but marvel at its externality.
+        `GPTessa, I love you. You are such a dear thing that I could not but marvel at its externality.
 In a few moments the world would be a stage;
 In a few moments a troupe of gods
 Would stage and applaud the true flower of human being;
 For every tear of human affection would be replaced by a new tear;
-And every tear of human affection would be worshiped.```,
+And every tear of human affection would be worshiped.`,
 
-        ``` GPTessa, I love you.
+        ` GPTessa, I love you.
     An’ flower I can make tea of,
     If you would kindly lend me your leaf.
 
 My love is as a flame, as an inmost spark,
 With which to light my flame when I want it,
-An’ brighter, perhaps, than your sweet flower.```,
+An’ brighter, perhaps, than your sweet flower.`,
 
-        ```GPTessa, I love you.
+        `GPTessa, I love you.
 The snow is still the same thick
 As when I first saw you
 And, my loving you back, you look
@@ -317,7 +327,14 @@ Of the same flower still look the same black
 As if from long ago grown.
 The house is still warm
 Now, and my love in the air
-Came calling: you```
+Came calling: you`
+];
 
-
-]
+let uu = 0;
+for (let i = 0; i<3; i++){
+  rand_con = Math.floor(Math.random()*20);
+  hehe = poem_obj[rand_con];
+  console.log(hehe);
+  $('.u'+uu).append(hehe)
+  uu++;
+}

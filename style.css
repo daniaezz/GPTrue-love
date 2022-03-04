@@ -224,7 +224,11 @@ h1 {
 }
 
 #everything4{
-  visibility: hidden
+  visibility: hidden;
+}
+
+#everything5{
+  visibility: hidden;
 }
 
 .results-art {
