@@ -152,3 +152,17 @@ for (let i =0; i<3; i++){
   // $('.x'+xx).append(hehe)
   xx++;
 }
+
+// let scorePoem = 0;
+
+document.getElementById('button8').addEventListener("click",()=>{
+  // if (clickablet == 1 ){
+  scorePoem = randomInt(10, 20);
+  console.log(scorePoem);
+    scoreFinal += parseInt(Math.floor(scorePoem));
+    $('#everything8').css('display', 'none');
+    $('#everything9').css('display', 'grid');
+    $('.brogress').css('width', scoreFinal+'%');
+    $('.scoreText3').append(scoreFinal);
+  // }
+});
