@@ -19,35 +19,26 @@ let clickable = 0;
 function clicked(element){
   clickable =1;
   index = element.id[6]
-  // console.log(index);
-  // console.log(con_obj['s'+index][1]);
+  console.log(con_obj['s'+index][1]);
   element.value = con_obj['s'+index][1];
-
   score = Math.floor(element.value);
     sessionStorage.setItem('score', element.value);
   console.log(score);
 }
 
 document.getElementById('button2').addEventListener("click",()=>{
-  // console.log('ww');
   if (clickable == 1 ){
     $('.scoreText').append(score);
     $('#everything1').css('display', 'none');
     $('#everything2').css('visibility', 'visible');
     $('.brogress').css('width', score+'%');
-    // $('.brogress').css('animation-name', 'brogress');
   }
 
 });
 
 document.getElementById('button3').addEventListener("click",()=>{
-  // console.log('ww');
     $('#everything2').css('display', 'none');
     $('#everything3').css('visibility', 'visible');
-    // $('.brogress').css('width', score+'%');
-    // $('.brogress').css('animation-name', 'brogress');
-
-
 });
 
 let tt=0;
@@ -67,10 +58,7 @@ let scoreFinal;
 function clicket(element){
   clickablet =1;
   index = element.id[7]
-  // console.log(index);
-  // console.log(con_obj['s'+index][1]);
   element.value = comp_obj['t'+index][1];
-
   scoreComp = Math.floor(element.value);
     sessionStorage.setItem('score', element.value);
   console.log(scoreComp);
@@ -78,27 +66,18 @@ function clicket(element){
 
 
 document.getElementById('button4').addEventListener("click",()=>{
-  // console.log('ww');
   if (clickablet == 1 ){
     scoreFinal = parseInt(score)+parseInt(scoreComp);
     $('#everything3').css('display', 'none');
     $('#everything4').css('visibility', 'visible');
     $('.brogress').css('width', scoreFinal+'%');
-    // $('.brogress').css('animation-name', 'brogress');
     $('.scoreText1').append(scoreFinal);
-
   }
-
 });
 
 document.getElementById('button5').addEventListener("click",()=>{
-  // console.log('ww');
     $('#everything4').css('display', 'none');
-    $('#everything5').css('visibility', 'visible');
-    // $('.brogress').css('width', score+'%');
-    // $('.brogress').css('animation-name', 'brogress');
-
-
+    $('#everything5').css('visibility', 'visible')
 });
 
 let uu = 0;
@@ -109,3 +88,21 @@ for (let i = 0; i<3; i++){
   $('.u'+uu).append(hehe)
   uu++;
 }
+
+function randomInt(min, max) { // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+let scorePoem = 0;
+
+document.getElementById('button6').addEventListener("click",()=>{
+  // if (clickablet == 1 ){
+  scorePoem = randomInt(10, 20);
+  console.log(scorePoem);
+    scoreFinal += parseInt(Math.floor(scorePoem));
+    $('#everything5').css('display', 'none');
+    $('#everything6').css('visibility', 'visible');
+    $('.brogress').css('width', scoreFinal+'%');
+    $('.scoreText2').append(scoreFinal);
+  // }
+});
