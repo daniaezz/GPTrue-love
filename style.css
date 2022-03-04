@@ -208,7 +208,12 @@ h1 {
   display: flex;
   width: 820px;
   align-items: right;
+}
+
+.button-container2{
+  /* margin: 10px; */
   margin-left: auto;
+  margin-right: 20px;
 }
 
 .right-content {
@@ -262,6 +267,10 @@ h1 {
 
 #everything7{
   visibility: hidden;
+}
+
+#everything8{
+  display: none;
 }
 
 .results-art {
