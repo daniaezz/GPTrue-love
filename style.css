@@ -1,7 +1,6 @@
 body{
-  margin: 40;
   padding: 0;
-  background-color: black;
+  background-color:black;
   color: white;
   font-size: 25pt;
 }
@@ -15,7 +14,6 @@ body{
   display: grid;
   width: 100vw;
   height: 100vh;
-  position: absolute;
   align-items: center;
   justify-self: center;
   text-align: center;
@@ -76,7 +74,7 @@ a{
   align-items: center;
   justify-self: center;
   line-height: 40px;
-  width: 50%;
+  width: 70%;
   /* margin: 0; */
 }
 
