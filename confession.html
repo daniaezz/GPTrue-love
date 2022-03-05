@@ -150,19 +150,19 @@ _|__|/ \|_|_           .*.             _|________|_
 / ********** \                          / ********** \
 /  ************  \                      /  ************  \
 --------------------                    --------------------
-                       _                 
-                      {_}                
-                      |(|                
-                      |=|                
-                     /   \               
-                     |.--|               
-        )            ||  |               
-      (              ||  |    .    ' .   
-        )            |'--|  '     \~~~/  
-    __..---..__      '-=-' \~~~/   \_/   
-,-='  /  |  \  `=-.         \_/     Y    
-:--..___________..--;        Y     _|_   
- \.,_____________,./         _|_          
+                       _
+                      {_}
+                      |(|
+                      |=|
+                     /   \
+                     |.--|
+        )            ||  |
+      (              ||  |    .    ' .
+        )            |'--|  '     \~~~/
+    __..---..__      '-=-' \~~~/   \_/
+,-='  /  |  \  `=-.         \_/     Y
+:--..___________..--;        Y     _|_
+ \.,_____________,./         _|_
 
         </pre>
 
@@ -443,11 +443,11 @@ _|__|/ \|_|_............*.............._|________|_
             Starter
           </div>
           <div class="radio-button">
-            <input id="vradio-0" type="radio"  name="language1" value="java" class='radiob'>
+            <input id="vradio-0" type="radio"  onclick="clickev(this)" name="language1" value="java" class='radiob'>
             <label for="vradio-0" class="v0 hh rat"></label>
-            <input id="vradio-1" type="radio"  name="language1" value="cpp"  class='radiob'>
+            <input id="vradio-1" type="radio"  onclick="clickev(this)" name="language1" value="cpp"  class='radiob'>
             <label for="vradio-1" class="v1 hh rat"></label>
-            <input id="vradio-2" type="radio" name="language1" value="python" class='radiob'>
+            <input id="vradio-2" type="radio" onclick="clickev(this)" name="language1" value="python" class='radiob'>
             <label for="vradio-2" class="v2 hh rat" ></label>
           </div>
         </div>
@@ -458,11 +458,11 @@ _|__|/ \|_|_............*.............._|________|_
               Main
             </div>
             <div class="radio-button">
-              <input id="wradio-0" type="radio"  name="language2" value="java" class='radiob'>
+              <input id="wradio-0" type="radio"  onclick="clickew(this)" name="language2" value="java" class='radiob'>
               <label for="wradio-0" class="w0 hh rat"></label>
-              <input id="wradio-1" type="radio"  name="language2" value="cpp"  class='radiob'>
+              <input id="wradio-1" type="radio"  onclick="clickew(this)" name="language2" value="cpp"  class='radiob'>
               <label for="wradio-1" class="w1 hh rat"></label>
-              <input id="wradio-2" type="radio" name="language2" value="python" class='radiob'>
+              <input id="wradio-2" type="radio" onclick="clickew(this)" name="language2" value="python" class='radiob'>
               <label for="wradio-2" class="w2 hh rat" ></label>
             </div>
           </div>
@@ -473,11 +473,11 @@ _|__|/ \|_|_............*.............._|________|_
                 Dessert
               </div>
               <div class="radio-button">
-                <input id="xradio-0" type="radio"  name="language3" value="java" class='radiob'>
+                <input id="xradio-0" type="radio" onclick="clickex(this)"  name="language3" value="java" class='radiob'>
                 <label for="xradio-0" class="x0 hh rat"></label>
-                <input id="xradio-1" type="radio"  name="language3" value="cpp"  class='radiob'>
+                <input id="xradio-1" type="radio" onclick="clickex(this)"  name="language3" value="cpp"  class='radiob'>
                 <label for="xradio-1" class="x1 hh rat"></label>
-                <input id="xradio-2" type="radio" name="language3" value="python" class='radiob'>
+                <input id="xradio-2" type="radio" onclick="clickex(this)" name="language3" value="python" class='radiob'>
                 <label for="xradio-2" class="x2 hh rat" ></label>
               </div>
             </div>
@@ -494,9 +494,33 @@ _|__|/ \|_|_............*.............._|________|_
 
 
       <div class="everything" id='everything9'>
-        <div class="title">
-          POEM RESULTS ♥
+        <div class="titleDinner">
+          DINNER RESULTS ♥
         </div>
+        <div class="dinnerGrid">
+
+          <div class="dinner-con-text" id='dinner-con-text'>
+            <div class="menu s"></div>
+            <div><ul class="sIng"></ul></div>
+            <div class="sDir"></div>
+          </div>
+
+          <!-- <div class="dinnerGrid"> -->
+            <div class="dinner-con-text" id='dinner-con-text'>
+              <div class="menu m"></div>
+              <div><ul class="mIng"></ul></div>
+              <div class="mDir"></div>
+            </div>
+
+            <!-- <div class="dinnerGrid"> -->
+              <div class="dinner-con-text" id='dinner-con-text'>
+                <div class="menu d"></div>
+                <div><ul class="dIng"></ul></div>
+                <div class="dDir"></div>
+              </div>
+
+        </div>
+
         <pre class="small-ascii" class="results-art">
 
 
@@ -515,7 +539,7 @@ _|__|/ \|_|_............*.............._|________|_
   /  ************  \                      /  ************  \
   --------------------                    --------------------
         </pre>
-        <h1 class='results-h1'>What a lovely poem! <br>It seems like your poetry charms are doing their magic </h1>
+        <h1 class='results-h1'> you followed these recipies to create a wonderful dinner! <br>It seems that GPTessa is impressed with your cooking </h1>
         <div class="scoreText3">
           Your score is......
         </div>

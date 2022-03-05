@@ -119,10 +119,12 @@ document.getElementById('button7').addEventListener("click",()=>{
 var vv = 0;
 let vIng = [];
 let vDir = [];
+let vTitles = [];
 
 for (let i =0; i<3; i++){
   rand_con = Math.floor(Math.random()*20);
   hehe = starters_obj['v'+rand_con][0];
+  vTitles.push(hehe);
   for (let j = 0; j<hehe.length; j++){
     // console.log(hehe[j]);
     $('.v'+vv).append(hehe[j]+" ");
@@ -141,48 +143,126 @@ for (let i =0; i<3; i++){
 var ww = 0;
 let wIng = [];
 let wDir = [];
+let wTitles= [];
 
 for (let i =0; i<3; i++){
   rand_con = Math.floor(Math.random()*20);
   hehe = mains_obj['w'+rand_con][0];
+  wTitles.push(hehe);
   // console.log(hehe);
   for (let j = 0; j<hehe.length; j++){
     // console.log(hehe[j]);
     $('.w'+ww).append(hehe[j]+" ")
   }
-  wIng.push(main_obj['w'+rand_con][1]);
-  wDir.push(main_obj['w'+rand_con][2]);
+  wIng.push(mains_obj['w'+rand_con][1]);
+  wDir.push(mains_obj['w'+rand_con][2]);
   ww++;
 }
 
 var xx = 0;
 let xIng = [];
 let xDir = [];
+let xTitles = [];
 
 for (let i =0; i<3; i++){
   rand_con = Math.floor(Math.random()*20);
   hehe = desserts_obj['x'+rand_con][0];
+  xTitles.push(hehe);
   // console.log(hehe);
   for (let j = 0; j<hehe.length; j++){
     // console.log(hehe[j]);
     $('.x'+xx).append(hehe[j]+" ")
   }
-  xIng.push(main_obj['x'+rand_con][1]);
-  xDir.push(main_obj['x'+rand_con][2]);
+  xIng.push(desserts_obj['x'+rand_con][1]);
+  xDir.push(desserts_obj['x'+rand_con][2]);
   // $('.x'+xx).append(hehe)
   xx++;
 }
 
-// let scorePoem = 0;
+let dinner_click = 0;
+let vclick = 0;
+let wclick = 0;
+let xclick = 0;
 
+let final_starterIng;
+let final_starterDir;
+let final_starterTitle;
+let final_mainIng;
+let final_mainDir;
+let final_mainTitle;
+let final_dessertIng;
+let final_dessertDir;
+let final_dessertTitle;
+
+function clickev(element){
+  vclick =1;
+  index = element.id[7]
+   final_starterIng = vIng[index];
+   final_starterDir = vDir[index];
+   final_starterTitle = vTitles[index];
+   console.log(final_starterTitle);
+
+}
+
+function clickew(element){
+  wclick =1;
+  index = element.id[7]
+   final_mainIng = wIng[index];
+   final_mainDir = wDir[index];
+   final_mainTitle = wTitles[index];
+}
+
+function clickex(element){
+  xclick =1;
+  index = element.id[7]
+  final_dessertIng = xIng[index];
+  final_dessertDir = xDir[index];
+  final_dessertTitle = xTitles[index];
+}
+
+let scoreDinner
 document.getElementById('button8').addEventListener("click",()=>{
-  // if (clickablet == 1 ){
-  scorePoem = randomInt(10, 20);
+  dinner_click = xclick+wclick+vclick;
+  if (dinner_click == 3 ){
+    scoreDinner = randomInt(15, 25);
   // console.log(scorePoem);
-    scoreFinal += parseInt(Math.floor(scorePoem));
+    scoreFinal += scoreDinner;
     $('#everything8').css('display', 'none');
     $('#everything9').css('display', 'grid');
     $('.brogress').css('width', scoreFinal+'%');
     $('.scoreText3').append(scoreFinal);
-  // }
+    for (let i =0; i<final_starterTitle.length; i++){
+      $('.s').append(final_starterTitle[i]+" ");
+    }
+    for (let i =0; i<final_mainTitle.length; i++){
+      $('.m').append(final_mainTitle[i]+" ");
+    }
+    for (let i =0; i<final_dessertTitle.length; i++){
+      $('.d').append(final_dessertTitle[i]+" ");
+    }
+
+    for (let i =0; i<final_starterIng.length; i++){
+      $('.sIng').append('<li>'+final_starterIng[i]+'</li>');
+    }
+
+    for (let i =0; i<final_mainIng.length; i++){
+      $('.mIng').append('<li>'+final_mainIng[i]+'</li>');
+    }
+
+    for (let i =0; i<final_dessertIng.length; i++){
+      $('.dIng').append('<li>'+final_dessertIng[i]+'</li>');
+    }
+
+    for (let i =0; i<final_starterDir.length; i++){
+      $('.sDir').append(final_starterDir[i]+'<br>');
+    }
+
+    for (let i =0; i<final_mainDir.length; i++){
+      $('.mDir').append(final_mainDir[i]+'<br>');
+    }
+
+    for (let i =0; i<final_dessertDir.length; i++){
+      $('.dDir').append(final_dessertDir[i]+'<br>');
+    }
+  }
 });
