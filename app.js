@@ -266,3 +266,34 @@ document.getElementById('button8').addEventListener("click",()=>{
     }
   }
 });
+
+document.getElementById('button9').addEventListener("click",()=>{
+    $('#everything9').css('display', 'none');
+    $('#everything10').css('display', 'grid');
+});
+
+let scoreHoro = 0;
+let horoClick = 0;
+let final_horo;
+
+function clickHoro(element){
+  horoClick = 1;
+}
+
+document.getElementById('button10').addEventListener("click",()=>{
+  console.log('button10');
+  if (horoClick==1){
+    console.log('if');
+    scoreHoro = randomInt(5, 10);
+    scoreFinal += scoreHoro;
+    console.log(horo_obj.length);
+    index = Math.floor((Math.random()*horo_obj.length)+1);
+    final_horo = horo_obj[index];
+    console.log(final_horo);
+    $('.final_horo').append(final_horo);
+    $('#everything10').css('display', 'none');
+    $('#everything11').css('display', 'grid');
+    $('.brogress').css('width', scoreFinal+'%');
+    $('.scoreText4').append(scoreFinal);
+  }
+});
