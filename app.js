@@ -220,6 +220,7 @@ let scoreDinner
 document.getElementById('button8').addEventListener("click",()=>{
   dinner_click = xclick+wclick+vclick;
   if (dinner_click == 3 ){
+    $(window).scrollTop(0);
     scoreDinner = randomInt(15, 25);
   // console.log(scorePoem);
     scoreFinal += scoreDinner;
