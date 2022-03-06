@@ -26,6 +26,7 @@ function clicked(element){
 
 document.getElementById('button2').addEventListener("click",()=>{
   if (clickable == 1 ){
+    $(window).scrollTop(0);
     $('.scoreText').append(score);
     $('#everything1').css('display', 'none');
     $('#everything2').css('visibility', 'visible');
@@ -37,6 +38,8 @@ document.getElementById('button2').addEventListener("click",()=>{
 document.getElementById('button3').addEventListener("click",()=>{
     $('#everything2').css('display', 'none');
     $('#everything3').css('visibility', 'visible');
+    $(window).scrollTop(0);
+
 });
 
 let tt=0;
@@ -67,6 +70,7 @@ function clicket(element){
 
 document.getElementById('button4').addEventListener("click",()=>{
   if (clickablet == 1 ){
+    $(window).scrollTop(0);
     scoreFinal = parseInt(score)+parseInt(scoreComp);
     $('#everything3').css('display', 'none');
     $('#everything4').css('visibility', 'visible');
@@ -76,6 +80,7 @@ document.getElementById('button4').addEventListener("click",()=>{
 });
 
 document.getElementById('button5').addEventListener("click",()=>{
+    $(window).scrollTop(0);
     $('#everything4').css('display', 'none');
     $('#everything5').css('visibility', 'visible')
 });
@@ -97,8 +102,9 @@ let scorePoem = 5;
 
 document.getElementById('button6').addEventListener("click",()=>{
   // if (clickablet == 1 ){
-  scorePoem = randomInt(10, 20);
+    scorePoem = randomInt(10, 20);
   // console.log(scorePoem);
+    $(window).scrollTop(0);
     scoreFinal += parseInt(Math.floor(scorePoem));
     $('#everything5').css('display', 'none');
     $('#everything6').css('visibility', 'visible');
@@ -108,6 +114,7 @@ document.getElementById('button6').addEventListener("click",()=>{
 });
 
 document.getElementById('button7').addEventListener("click",()=>{
+    $(window).scrollTop(0);
     $('#everything6').css('display', 'none');
     $('#everything8').css('display', 'grid');
 });
@@ -265,6 +272,7 @@ document.getElementById('button8').addEventListener("click",()=>{
 });
 
 document.getElementById('button9').addEventListener("click",()=>{
+    $(window).scrollTop(0);
     $('#everything9').css('display', 'none');
     $('#everything10').css('display', 'grid');
 });
@@ -280,6 +288,7 @@ function clickHoro(element){
 document.getElementById('button10').addEventListener("click",()=>{
   console.log('button10');
   if (horoClick==1){
+    $(window).scrollTop(0);
     console.log('if');
     scoreHoro = randomInt(10, 20);
     scoreFinal += scoreHoro;
@@ -302,6 +311,8 @@ console.log(proposals);
 document.getElementById('button11').addEventListener("click",()=>{
     $('#everything11').css('display', 'none');
     $('#everything12').css('display', 'grid');
+    $(window).scrollTop(0);
+
 
     for (let i =0; i<proposals.length; i++){
       $('.proposal'+i).append(proposals[i]);
@@ -335,6 +346,7 @@ document.getElementById('button12').addEventListener("click",()=>{
   if (propNext ==1){
     $('#everything12').css('display', 'none');
     scoreFinal +=5;
+    $(window).scrollTop(0);
     console.log(scoreFinal);
     if (scoreFinal>=75){
       $('#everything13').css('display', 'grid');
