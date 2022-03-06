@@ -4,6 +4,7 @@ body{
   background-color: black;
   color: white;
   font-size: 32px;
+  font-height: 110%;
 }
 
 @font-face {
@@ -53,7 +54,7 @@ pre{
   padding: 40px 0 0 40px;
   position: absolute;
   top: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a{
@@ -136,15 +137,29 @@ a{
   height: 400px;
   border-color: white;
   text-align: left;
-  padding: 10px;
+  padding: 20px;
   padding-top: 0;
   border-style: solid;
   overflow: scroll;
 }
 
+/*RECIPE OUTCOME*/
+.dinner-recipe{
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  width: 420px;
+  height: 500px;
+  border-color: white;
+  text-align: left;
+  padding: 20px;
+  padding-top: 0;
+  border-style: solid;
+}
+
 .hh{
   margin: 20px;
-  line-height: 30px;
+  line-height: 120%;
   border-style: solid;
   user-select: none;
 }
@@ -232,6 +247,10 @@ h1 {
 
 /*SCORE TEXT BELOW MARGINS*/
 .scoreText {
+  margin-bottom: 40px;
+}
+
+.scoreText1 {
   margin-bottom: 40px;
 }
 
@@ -337,7 +356,7 @@ h1 {
   padding: 40px 0 40px 40px;
   position: relative;
   top: 0;
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -347,4 +366,38 @@ h1 {
 
 #everything11{
   display: none;
+}
+
+#everything12{
+  display: none;
+}
+
+.final_horo {
+  padding: 30px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 3vw;
+}
+
+.pp{
+  margin: 20px;
+  width: 400px;
+  border-style: solid;
+  user-select: none;
+  height: 60px;
+  justify-self: center;
+  display: grid;
+  align-items: center;
+  display: grid;
+}
+
+.prop{
+  display: grid;
+  align-items: center;
+  justify-self: center;
+}
+
+.pp:hover{
+  background-color: #3A3B3C;
+  /* color: black; */
 }

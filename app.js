@@ -297,3 +297,36 @@ document.getElementById('button10').addEventListener("click",()=>{
     $('.scoreText4').append(scoreFinal);
   }
 });
+
+proposals.splice(Math.random()*proposals.length, 0, 'WILL YOU MARRY ME');
+
+console.log(proposals);
+
+document.getElementById('button11').addEventListener("click",()=>{
+    $('#everything11').css('display', 'none');
+    $('#everything12').css('display', 'grid');
+
+    for (let i =0; i<proposals.length; i++){
+      $('.proposal'+i).append(proposals[i]);
+    }
+});
+
+let propNext = 0;
+
+function clickProp(element){
+  if (element.id[7] == proposals.indexOf('WILL YOU MARRY ME', 0)){
+    propNext =1;
+  }
+}
+
+
+function hoverProp(element){
+  console.log(element.class);
+  if (element.id[8] != proposals.indexOf('WILL YOU MARRY ME', 0)){
+    element.innerHTML = 'NOT THIS ONE!';
+  }
+}
+
+function outProp(element){
+  element.innerHTML = proposals[element.id[8]];
+}
