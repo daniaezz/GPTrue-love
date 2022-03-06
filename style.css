@@ -4,7 +4,6 @@ body{
   background-color: black;
   color: white;
   font-size: 32px;
-  font-height: 110%;
 }
 
 @font-face {
@@ -27,9 +26,13 @@ body{
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
+.results-ascii {
+  margin-block-start: 60px;
+}
+
 .results-h1 {
-  margin-block-start: 70px;
-  margin-block-end: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
   max-width: 80%;
   justify-self: center;
   /* text-align: center; */
@@ -37,7 +40,6 @@ body{
 
 .small-ascii {
   font-size: 12px;
-  margin-top: 4vw;
 }
 
 pre{
@@ -52,6 +54,7 @@ pre{
 
 .title{
   padding: 40px 0 0 40px;
+  margin-bottom: 40px;
   position: absolute;
   top: 0;
   font-size: 20px;
@@ -70,7 +73,7 @@ a{
 .button{
   display: grid;
   justify-self: center;
-  width: 200px;
+  width: 220px;
   height: 50px;
   color: black;
   background-color: white;
@@ -106,6 +109,7 @@ a{
 
 .dinnerGrid{
   /* justify-self: center; */
+
   display: inline-grid;
   grid-template-columns: auto auto auto;
   align-items: center;
@@ -113,6 +117,11 @@ a{
   /* margin: 0 20px 0 20px; */
   justify-items: center;
 }
+
+.dinner-main {
+  margin-top: 20px;
+}
+
 /* grid2{} */
 .con-text{
   display: grid;
@@ -146,10 +155,10 @@ a{
 /*RECIPE OUTCOME*/
 .dinner-recipe{
   display: grid;
-  align-items: center;
-  justify-self: center;
   width: 420px;
-  height: 500px;
+  line-height: 80%;
+  align-items: flex-start;
+  height: 560px;
   border-color: white;
   text-align: left;
   padding: 20px;
@@ -219,7 +228,7 @@ input[type="radio"] {
 h1 {
   font-size: 52px;
   line-height: 96%;
-  margin-block-start: 70px;
+  margin-block-start: 80px;
   margin-block-end: 0px;
 }
 
@@ -325,21 +334,27 @@ h1 {
 
 .results-art {
   padding-top: 60px;
-
   margin-block-start: 70px;
 }
 
 .menu{
   width: 100%;
-  height: 50px;
-  margin: 0;
+  height: 60px;
   display: grid;
-  justify-self: center;
   align-items: center;
   position: sticky;
   top: 0px;
   background-color: black;
-  padding: 4px 0 4px 0;
+  text-align: center;
+  /* margin:0; */
+}
+
+.menu2{
+  width: 100%;
+  height: 64px;
+  display: grid;
+  align-items: center;
+  background-color: black;
   text-align: center;
   /* margin:0; */
 }
@@ -375,6 +390,9 @@ h1 {
 .final_horo {
   padding: 30px;
   border-style: solid;
+  width: 60%;
+  line-height: 100%;
+  justify-self: center;
   border-color: white;
   margin-top: 3vw;
 }
@@ -408,4 +426,15 @@ h1 {
 
 #everything14{
   display: none;
+}
+
+.dinner-ascii {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+.final_res {
+  margin-top: 60px;
 }

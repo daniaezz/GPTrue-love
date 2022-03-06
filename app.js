@@ -118,7 +118,7 @@ let vDir = [];
 let vTitles = [];
 
 for (let i =0; i<3; i++){
-  rand_con = Math.floor(Math.random()*20);
+  rand_con = Math.floor(Math.random()*25);
   hehe = starters_obj['v'+rand_con][0];
   vTitles.push(hehe);
   for (let j = 0; j<hehe.length; j++){
@@ -161,7 +161,7 @@ let xDir = [];
 let xTitles = [];
 
 for (let i =0; i<3; i++){
-  rand_con = Math.floor(Math.random()*20);
+  rand_con = Math.floor(Math.random()*25);
   hehe = desserts_obj['x'+rand_con][0];
   xTitles.push(hehe);
   // console.log(hehe);
@@ -280,7 +280,7 @@ document.getElementById('button10').addEventListener("click",()=>{
   console.log('button10');
   if (horoClick==1){
     console.log('if');
-    scoreHoro = randomInt(5, 10);
+    scoreHoro = randomInt(10, 20);
     scoreFinal += scoreHoro;
     console.log(horo_obj.length);
     index = Math.floor((Math.random()*horo_obj.length)+1);
