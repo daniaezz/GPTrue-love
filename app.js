@@ -118,7 +118,7 @@ let vDir = [];
 let vTitles = [];
 
 for (let i =0; i<3; i++){
-  rand_con = Math.floor(Math.random()*25);
+  rand_con = Math.floor(Math.random()*20);
   hehe = starters_obj['v'+rand_con][0];
   vTitles.push(hehe);
   for (let j = 0; j<hehe.length; j++){
@@ -161,7 +161,7 @@ let xDir = [];
 let xTitles = [];
 
 for (let i =0; i<3; i++){
-  rand_con = Math.floor(Math.random()*25);
+  rand_con = Math.floor(Math.random()*20);
   hehe = desserts_obj['x'+rand_con][0];
   xTitles.push(hehe);
   // console.log(hehe);
