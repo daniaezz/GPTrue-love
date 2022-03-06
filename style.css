@@ -342,8 +342,6 @@ h1 {
   height: 60px;
   display: grid;
   align-items: center;
-  position: sticky;
-  top: 0px;
   background-color: black;
   text-align: center;
   /* margin:0; */
@@ -357,6 +355,11 @@ h1 {
   background-color: black;
   text-align: center;
   /* margin:0; */
+}
+
+.st{
+  position: sticky;
+  top: 0px;
 }
 
 .rat{

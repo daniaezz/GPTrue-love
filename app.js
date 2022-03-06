@@ -333,7 +333,8 @@ function outProp(element){
 document.getElementById('button12').addEventListener("click",()=>{
   if (propNext ==1){
     $('#everything12').css('display', 'none');
-
+    scoreFinal +=5;
+    console.log(scoreFinal);
     if (scoreFinal>=75){
       $('#everything13').css('display', 'grid');
       $('.brogress').css('width', '100%');
