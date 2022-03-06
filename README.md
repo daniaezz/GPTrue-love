@@ -17,10 +17,17 @@ The project deals with a number of themes and topics from class. In particular, 
 Dania and Pauline did basically everything in this project together, but in particular, Pauline worked more on the idea, design, writing and ASCII art, while Dania worked more on the front-end development and Javascript.
 
 Drive Link:
+
 https://drive.google.com/drive/u/3/folders/1C35UWmI2fRKNvbWo2SozaO8fTA70HnIL
+
+
 Play Here:
+
 https://daniaezz.github.io/GPTrue-love/
+
+
 ASCII Art Archive:
+
 https://www.asciiart.eu/
 
 
