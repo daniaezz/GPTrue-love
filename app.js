@@ -1,5 +1,6 @@
-var ss = 0;
-let sValues = []
+let ss = 0;
+let sValues = [];
+
 for (let i =0; i<5; i++){
   rand_con = Math.floor(Math.random()*20);
   hehe = con_obj['s'+rand_con][0];
@@ -12,18 +13,13 @@ for (let i =0; i<5; i++){
 
 // console.log(rand_con);
 
-cc=0;
-let index;
-let score = 0;
-let text;
-let clickable = 0;
 
 function clicked(element){
   clickable =1;
-  index = element.id[6]
+  index = element.id[6];
   // console.log(con_obj['s'+index][1]);
   element.value = sValues[index];
-  score = Math.floor(element.value);
+  score = Math.floor(element.value)+5;
     sessionStorage.setItem('score', element.value);
   // console.log(score);
 }
@@ -57,11 +53,11 @@ for (let i =0; i<8; i++){
 
 clickablet =0;
 
-let scoreComp =0
+let scoreComp =5;
 let scoreFinal;
 function clicket(element){
   clickablet =1;
-  index = element.id[7]
+  index = element.id[7];
   element.value = comp_obj['t'+index][1];
   scoreComp = Math.floor(element.value);
     sessionStorage.setItem('score', element.value);
@@ -97,7 +93,7 @@ function randomInt(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-let scorePoem = 0;
+let scorePoem = 5;
 
 document.getElementById('button6').addEventListener("click",()=>{
   // if (clickablet == 1 ){
@@ -116,7 +112,7 @@ document.getElementById('button7').addEventListener("click",()=>{
     $('#everything8').css('display', 'grid');
 });
 
-var vv = 0;
+let vv = 0;
 let vIng = [];
 let vDir = [];
 let vTitles = [];
@@ -140,7 +136,7 @@ for (let i =0; i<3; i++){
 
 
 
-var ww = 0;
+let ww = 0;
 let wIng = [];
 let wDir = [];
 let wTitles= [];
@@ -159,7 +155,7 @@ for (let i =0; i<3; i++){
   ww++;
 }
 
-var xx = 0;
+let xx = 0;
 let xIng = [];
 let xDir = [];
 let xTitles = [];
@@ -317,6 +313,9 @@ function clickProp(element){
   if (element.id[7] == proposals.indexOf('WILL YOU MARRY ME', 0)){
     propNext =1;
   }
+  else{
+    propNext =0;
+  }
 }
 
 
@@ -330,3 +329,18 @@ function hoverProp(element){
 function outProp(element){
   element.innerHTML = proposals[element.id[8]];
 }
+
+document.getElementById('button12').addEventListener("click",()=>{
+  if (propNext ==1){
+    $('#everything12').css('display', 'none');
+
+    if (scoreFinal>=75){
+      $('#everything13').css('display', 'grid');
+      $('.brogress').css('width', '100%');
+    }
+    else{
+      $('#everything14').css('display', 'grid');
+    }
+  }
+
+});
